@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #000;
+}
+body .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .wrapper p {
+  color: #00ff41;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+body .wrapper .line {
+  position: relative;
+  border-right: 4px solid #00ff40;
+  width: 295px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body .wrapper .typing {
+  animation: typewriter 3s steps(13) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 150px;
+  }
+}
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(0, 255, 64, 0.5);
+  }
+  to {
+    border-right-color: #00ff40;
+  }
+}
